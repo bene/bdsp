@@ -1,0 +1,17 @@
+{
+  "name": "demo-fragen",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "develop": "POSTGRES_URL=postgresql://postgres:password@localhost:5432/postgres QUESTION1=\"Wie heiß ich?\" QUESTION2=\"Wie heißt du?\" QUESTION3=\"Wie heiß es?\" node ./bin/www"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pg": "^8.5.1"
+  }
+}
